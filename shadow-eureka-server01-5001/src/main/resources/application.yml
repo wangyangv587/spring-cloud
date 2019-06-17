@@ -1,0 +1,16 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: eureka-server01
+
+eureka:
+  client:
+    # 取消向Eureka注册中心注册
+    register-with-eureka: false
+    # 取消从Eureka注册中心获取注册信息
+    fetch-registry: false
+    # Eureka提供注册发现的地址
+    service-url:
+      defaultZone: http://${spring.application.name}:${server.port}/eureka
