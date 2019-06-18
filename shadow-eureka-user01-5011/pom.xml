@@ -9,19 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shadow-eureka-server01-5001</artifactId>
-    <name>shadow-eureka-server01-5001</name>
-    <description>springcloud组件之eureka-server</description>
+    <artifactId>shadow-eureka-user01-5011</artifactId>
+    <name>shadow-eureka-user01-5011</name>
+    <description>springcloud组件之eureka-client用户客户端</description>
+
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-security</artifactId>-->
-        <!--</dependency>-->
     </dependencies>
+
 </project>

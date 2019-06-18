@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/shadow-eureka-server01-5001/shadow-eureka-server01-5001.iml" filepath="$PROJECT_DIR$/shadow-eureka-server01-5001/shadow-eureka-server01-5001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shadow-eureka-server02-5002/shadow-eureka-server02-5002.iml" filepath="$PROJECT_DIR$/shadow-eureka-server02-5002/shadow-eureka-server02-5002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shadow-eureka-server03-5003/shadow-eureka-server03-5003.iml" filepath="$PROJECT_DIR$/shadow-eureka-server03-5003/shadow-eureka-server03-5003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shadow-eureka-user01-5011/shadow-eureka-user01-5011.iml" filepath="$PROJECT_DIR$/shadow-eureka-user01-5011/shadow-eureka-user01-5011.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud.iml" />
     </modules>
   </component>

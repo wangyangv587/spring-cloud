@@ -7,16 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shadow-eureka-server01-5001" />
+        <module name="shadow-eureka-server02-5002" />
+        <module name="shadow-eureka-server03-5003" />
+        <module name="shadow-eureka-user01-5011" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shadow-eureka-server01-5001" target="1.8" />
+      <module name="shadow-eureka-server02-5002" target="1.8" />
+      <module name="shadow-eureka-server03-5003" target="1.8" />
+      <module name="shadow-eureka-user01-5011" target="1.8" />
       <module name="spring-cloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="shadow-eureka-server01-5001" options="-parameters" />
+      <module name="shadow-eureka-server02-5002" options="-parameters" />
+      <module name="shadow-eureka-server03-5003" options="-parameters" />
+      <module name="shadow-eureka-user01-5011" options="-parameters" />
       <module name="spring-cloud" options="-parameters" />
     </option>
   </component>

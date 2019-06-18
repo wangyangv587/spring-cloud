@@ -1,12 +1,12 @@
 server:
-  port: 5001
+  port: 5002
 spring:
   application:
-    name: eureka-server01
+    name: eureka-server02
 
 eureka:
   instance:
-    hostname: eureka5001.com
+    hostname: eureka5002.com
     prefer-ip-address: true
   server:
     #关闭自我保护机制
@@ -20,7 +20,7 @@ eureka:
     fetch-registry: false
     # Eureka提供注册发现的地址
     serviceUrl:
-      defaultZone: http://eureka5003.com:5003/eureka,http://eureka5002.com:5002/eureka/
+      defaultZone: http://eureka5001.com:5001/eureka,http://eureka5003.com:5003/eureka/
 #      defaultZone: http://shadow:123456@${eureka.instance.hostname}:${server.port}/eureka/
 
 #security:
