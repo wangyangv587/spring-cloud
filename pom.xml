@@ -8,6 +8,9 @@
         <module>shadow-eureka-user01-5011</module>
         <module>shadow-eureka-server02-5002</module>
         <module>shadow-eureka-server03-5003</module>
+        <module>shadow-eureka-order01-5021</module>
+        <module>shadow-eureka-order02-5022</module>
+        <module>shadow-eureka-order03-5023</module>
     </modules>
 
     <parent>

@@ -11,7 +11,6 @@
 
     <artifactId>shadow-eureka-server01-5001</artifactId>
     <name>shadow-eureka-server01-5001</name>
-    <description>springcloud组件之eureka-server</description>
 
     <dependencies>
         <dependency>

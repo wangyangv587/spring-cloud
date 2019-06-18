@@ -6,6 +6,10 @@ spring:
     #此实例注册到Eureka实例的name
     name: eureka-user
 
+eureka-order:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
 eureka:
   client:
     serviceUrl:
