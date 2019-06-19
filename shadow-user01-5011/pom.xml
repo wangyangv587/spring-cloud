@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shadow-eureka-user01-5011</artifactId>
-    <name>shadow-eureka-user01-5011</name>
+    <artifactId>shadow-user01-5011</artifactId>
+    <name>shadow-user01-5011</name>
 
     <dependencies>
         <dependency>

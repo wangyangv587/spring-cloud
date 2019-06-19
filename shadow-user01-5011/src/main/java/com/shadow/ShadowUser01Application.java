@@ -10,9 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @EnableFeignClients
 @SpringBootApplication
-public class ShadowEurekaUser01Application {
+public class ShadowUser01Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(ShadowEurekaUser01Application.class);
+        SpringApplication.run(ShadowUser01Application.class);
     }
 }

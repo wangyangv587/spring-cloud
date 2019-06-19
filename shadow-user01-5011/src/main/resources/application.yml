@@ -6,13 +6,15 @@ spring:
     #此实例注册到Eureka实例的name
     name: eureka-user
 
-eureka-order:
+#配置负载均衡方式为随机轮询
+EUREKA-ORDER:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 eureka:
   client:
     serviceUrl:
+      #eureka集群配置
       defaultZone: http://eureka5001.com:5001/eureka/,http://eureka5002.com:5002/eureka/,http://eureka5003.com:5003/eureka/
   instance:
     #此实例注册到Eureka服务端的唯一实例ID
