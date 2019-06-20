@@ -16,6 +16,35 @@ feign:
   hystrix:
     enabled: true
 
+#hystrixdashbord
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          #隔离策略，默认是Thread, 可选Thread｜ Semaphor
+          strategy: Thread
+          thread:
+            #命令执行超时时 间，默认1000ms
+            timeoutInMilliseconds: 2000
+            #发生超时时是否中断， 默认true
+            interruptOnTimeout: true
+        timeout:
+          #执行是否启用超时时间，默认为true
+          enabled: true
+      circuitBreaker:
+        #强制打开熔断器，如果打开这个开关，那么拒绝所 有request，默认false
+        forceOpen: false
+        #强制关闭熔断器 如果这个开关打开，circuit将 一直关闭且忽略
+        forceClosed: false
+
 #eureka客户端配置
 eureka:
   client:

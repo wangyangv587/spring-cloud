@@ -21,7 +21,7 @@ public class UserController {
 //    HystrixCommand方式步骤1
 //    @HystrixCommand(fallbackMethod = "fallbackMethod")
     @RequestMapping("/getUserOrder/{userId}")
-    public R getUserOrder(@PathVariable Long userId){
+    public R getUserOrder(@PathVariable Long userId)throws Exception{
 
         return R.dataObj(userFeignService.getUserOrder(userId));
     }
