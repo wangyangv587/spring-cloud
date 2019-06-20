@@ -1,6 +1,8 @@
 package com.shadow.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.shadow.api.UserFeignOrderApi;
+import com.shadow.common.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +18,15 @@ public class UserController {
     @Autowired
     private UserFeignOrderApi userFeignService;
 
+//    HystrixCommand方式步骤1
+//    @HystrixCommand(fallbackMethod = "fallbackMethod")
     @RequestMapping("/getUserOrder/{userId}")
-    public String getUserOrder(@PathVariable Long userId){
+    public R getUserOrder(@PathVariable Long userId){
 
-        return userFeignService.getUserOrder(userId);
+        return R.dataObj(userFeignService.getUserOrder(userId));
     }
+//      HystrixCommand方式步骤2
+//    public R fallbackMethod(Long userId){
+//        return R.dataObj("请求失败" + userId);
+//    }
 }

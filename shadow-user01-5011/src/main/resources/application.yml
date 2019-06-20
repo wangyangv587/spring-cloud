@@ -11,6 +11,12 @@ EUREKA-ORDER:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
+#feign整合hystrix
+feign:
+  hystrix:
+    enabled: true
+
+#eureka客户端配置
 eureka:
   client:
     serviceUrl:
