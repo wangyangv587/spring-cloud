@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author Shadow
  * @date 2019/6/18 15:49
  */
-@FeignClient(name = "EUREKA-ORDER",fallback = UserFeignOrderApiFallBack.class)
+@FeignClient(name = "EUREKA-ORDER",fallbackFactory = UserFeignOrderApiFallBackFactory.class)
 public interface UserFeignOrderApi {
 
     @RequestMapping("/getUserOrder/{userId}")

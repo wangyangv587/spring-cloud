@@ -3,6 +3,7 @@ package com.shadow.api;
 import org.springframework.stereotype.Component;
 
 /**
+ * 降级调用类，失败时返回自定义信息
  * @author Shadow
  * @date 2019/6/18 16:02
  */
