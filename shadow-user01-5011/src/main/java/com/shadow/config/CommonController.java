@@ -1,7 +1,6 @@
 package com.shadow.config;
 
-import com.shadow.common.R;
-import org.springframework.web.bind.annotation.ControllerAdvice;
+import com.shadow.common.util.R;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

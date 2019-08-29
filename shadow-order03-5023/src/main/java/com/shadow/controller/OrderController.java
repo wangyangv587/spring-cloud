@@ -17,6 +17,6 @@ public class OrderController {
     public String getUserOrder(@PathVariable Long userId){
 
         System.out.println("count = " + ++count);
-        return "order03-5023-" + userId ;
+        return "order01-5023-" + userId + "-" + count ;
     }
 }

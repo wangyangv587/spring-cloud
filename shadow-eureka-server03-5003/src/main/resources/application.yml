@@ -1,5 +1,7 @@
 server:
   port: 5003
+  servlet:
+    context-path: /
 spring:
   application:
     name: eureka-server03
