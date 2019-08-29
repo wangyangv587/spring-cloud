@@ -13,6 +13,7 @@
         <module>shadow-user01-5011</module>
         <module>shadow-config-server01-5031</module>
         <module>shadow-common</module>
+        <module>shadow-zuul01-5041</module>
     </modules>
 
     <parent>
