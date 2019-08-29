@@ -12,3 +12,20 @@ eureka:
 spring:
   application:
     name: zuul
+
+zuul:
+  #配置路由调用
+  routes:
+    #自定义路由
+    myorder:
+      serviceId: eureka-order
+      path: /order/** # /**代表所有层级
+    myuser:
+      serviceId: eureka-user
+      path: /user/**
+  #禁用微服务名方式调用
+  ignored-services: "*" # 禁用微服务名列表：eureka-order,eureka-user，*代表所有
+  #添加自定义前缀
+  prefix: /api
+  #标识是否在请求转发前删除前缀
+  strip-prefix: true
