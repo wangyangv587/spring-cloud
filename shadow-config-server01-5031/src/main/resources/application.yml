@@ -1,19 +1,22 @@
 server:
-  port: 8888
+  port: 5031
 
 spring:
   application:
     name: config-server
-
   cloud:
     config:
       server:
         git:
           uri: https://github.com/wangyangv587/shadow-config.git
 
-
----
-
-spring:
-  application:
-    name: a
+#/{application}/{profile}[/{label}]
+#
+#/{application}-{profile}.yml
+#
+#/{label}/{application}-{profile}.yml
+#
+#/{application}-{profile}.properties
+#
+#/{label}/{application}-{profile}.properties
+#application就是配置文件的名字， profile就是对应的环境 label就是不同的分支

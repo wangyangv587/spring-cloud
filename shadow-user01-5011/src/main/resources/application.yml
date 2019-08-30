@@ -1,5 +1,4 @@
 server:
-  port: 5011
   servlet:
     context-path: /
 

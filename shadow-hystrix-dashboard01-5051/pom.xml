@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hystrix-dashbord01-5051</artifactId>
+    <artifactId>shadow-hystrix-dashbord01-5051</artifactId>
+    <name>shadow-hystrix-dashbord01-5051</name>
 
     <dependencies>
         <dependency>

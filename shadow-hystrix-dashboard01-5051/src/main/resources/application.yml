@@ -6,7 +6,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka5001.com:5001/eureka/,http://eureka5002.com:5002/eureka/,http://eureka5003.com:5003/eureka/
   instance:
-    instance-id: zuul-01
+    instance-id: hystrix-dashbord01
     prefer-ip-address: true
 
 spring:

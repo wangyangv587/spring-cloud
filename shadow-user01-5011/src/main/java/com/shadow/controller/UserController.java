@@ -3,6 +3,7 @@ package com.shadow.controller;
 import com.shadow.api.UserFeignOrderApi;
 import com.shadow.common.exception.ShadowException;
 import com.shadow.common.util.R;
+import com.shadow.common.util.SpringContextUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,8 +22,6 @@ public class UserController {
     @Autowired
     private UserFeignOrderApi userFeignService;
 
-    @Value("${spring.application.name}")
-    private String springApplicationName;
 
 //    HystrixCommand方式步骤1
 //    @HystrixCommand(fallbackMethod = "fallbackMethod")
@@ -39,7 +38,8 @@ public class UserController {
 
     @RequestMapping("/test")
     public R test(){
-
-        return R.ok().dataObj(springApplicationName);
+        String propertiesValue = SpringContextUtil.getPropertiesValue("test.config");
+        log.info("test | test.config:{}", propertiesValue);
+        return R.ok().dataObj(propertiesValue);
     }
 }
