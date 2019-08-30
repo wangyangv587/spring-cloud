@@ -1,5 +1,6 @@
 package com.shadow.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/6/18 15:45
  */
 @RestController
+@Slf4j
 public class OrderController {
 
     private static int count = 0;
@@ -16,7 +18,7 @@ public class OrderController {
     @RequestMapping("/getUserOrder/{userId}")
     public String getUserOrder(@PathVariable Long userId){
 
-        System.out.println("count = " + ++count);
+        log.info("count = {}",++count);
         return "order01-5022-" + userId + "-" + count ;
     }
 }

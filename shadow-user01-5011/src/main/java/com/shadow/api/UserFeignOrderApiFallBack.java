@@ -1,5 +1,6 @@
 package com.shadow.api;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 /**
@@ -8,12 +9,13 @@ import org.springframework.stereotype.Component;
  * @date 2019/6/18 16:02
  */
 @Component
+@Slf4j
 public class UserFeignOrderApiFallBack implements UserFeignOrderApi {
 
     @Override
     public String getUserOrder(Long userId) {
 
-        System.out.println("用户订单降级方法");
+        log.info("用户订单降级方法,userId:{}",userId);
         return "请求用户订单失败" + userId;
     }
 

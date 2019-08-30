@@ -14,6 +14,7 @@
         <module>shadow-config-server01-5031</module>
         <module>shadow-common</module>
         <module>shadow-zuul01-5041</module>
+        <module>shadow-hystrix-dashboard01-5051</module>
     </modules>
 
     <parent>
@@ -26,6 +27,11 @@
     <artifactId>shadow-springcloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>shadow-springcloud</name>
+
+    <properties>
+        <hutool.version>4.4.2</hutool.version>
+        <lombok.version>1.16.6</lombok.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -50,11 +56,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-configuration-processor</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -69,7 +75,13 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>4.4.2</version>
+            <version>${hutool.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 

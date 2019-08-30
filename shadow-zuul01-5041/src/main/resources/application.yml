@@ -29,3 +29,7 @@ zuul:
   prefix: /api
   #标识是否在请求转发前删除前缀
   strip-prefix: true
+  #配置禁用某个过滤器 disable为true
+  LoginFilter:
+    pre:
+      disable: false
