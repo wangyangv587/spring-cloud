@@ -1,6 +1,12 @@
 server:
   port: 5031
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
 spring:
   application:
     name: config-server
@@ -10,6 +16,11 @@ spring:
         git:
           uri: https://github.com/wangyangv587/shadow-config.git
 
+  rabbitmq:
+    host: 120.78.165.252
+    port: 5672
+    username: guest
+    password: guest
 #/{application}/{profile}[/{label}]
 #
 #/{application}-{profile}.yml

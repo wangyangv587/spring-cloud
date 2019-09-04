@@ -6,6 +6,11 @@ spring:
   application:
     #此实例注册到Eureka实例的name
     name: eureka-user
+  rabbitmq:
+    host: 120.78.165.252
+    port: 5672
+    username: guest
+    password: guest
 
 #配置负载均衡方式为随机轮询
 EUREKA-ORDER:
